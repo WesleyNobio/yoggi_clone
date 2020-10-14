@@ -2,7 +2,16 @@
     font-family: "bebas-neue-regular";
     src: url(fonts/bebas-neue-regular.otf)
 }
+@font-face{
+    font-family: "Sentinel-Medium";
+    src: url(fonts/FontsFree-Net-Sentinel-Medium.ttf)
+}
+@font-face{
+    font-family: "SentinelBold";
+    src: url(fonts/Sentinel-Bold.ttf)    
+}
 body{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -12,7 +21,7 @@ header{
     display: flex;
     width: 100%;
     height: 100px;
-    margin-top: -21px;
+    /* margin-top: -1px; */
 }
 .icone{
     width: 160px;
@@ -59,5 +68,47 @@ a:hover{
 /* ==================================== SOBRE =================================== */
 .sobre{
     background: #4298B5;
-    height: 110vh;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sobre > div{
+    width: 48%;
+    height: 80%;
+    /* background-color: #707372; */
+    color: white;
+}
+.sobre > div > h1 > span{
+    font-family: "Sentinel-Medium";
+}
+.sobre > div > h1 {
+    font-weight: lighter;
+    /* font-family: "Sentinel-Medium"; */
+    font-family: "SentinelBold", Courier, Serif;
+    text-align: center;
+    font-size: 3.5em;
+}
+.h2{
+    margin-top: -50px;
+}
+.sobre > div > p{
+    font-family: "Sentinel-Medium";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+    font-size: 1.2em;
+}
+.sobre > div > button{
+    background-color: white;
+    color: #4298B5;
+    width: 55%;
+    padding: 7px;
+    padding-top: 11px;
+    float: right;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "bebas-neue-regular";
 }
