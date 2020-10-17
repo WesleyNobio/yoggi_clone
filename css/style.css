@@ -1,0 +1,223 @@
+@font-face{
+    font-family: "bebas-neue-regular";
+    src: url(../fonts/bebas-neue-regular.otf)
+}
+@font-face{
+    font-family: "Sentinel-Medium";
+    src: url(../fonts/FontsFree-Net-Sentinel-Medium.ttf)
+}
+@font-face{
+    font-family: "SentinelBold";
+    src: url(../fonts/Sentinel-Bold.ttf)    
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    background: white;
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.icone{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#logo{
+    margin-bottom: 7px;
+}
+#menu{
+    display: none;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+}
+ul{
+    width: 95%;
+    display: flex;
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+}
+li{
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+a{
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    padding-top: 7px;
+    text-decoration: none;
+    color: #707372;
+    font-family: "bebas-neue-regular";
+    font-size: 1.4em;
+}
+li:nth-child(1) > a{
+    background-color: #4298B5;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+/* ==================================== SOBRE =================================== */
+.sobre{
+    background: #4298B5;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.sobre > div{
+    width: 48%;
+    height: 80%;
+    color: white;
+}
+.sobre > div > h1 > span{
+    font-family: "Sentinel-Medium";
+}
+.sobre > div > h1 {
+    font-weight: lighter;
+    font-family: "SentinelBold", Courier, Serif;
+    text-align: center;
+    font-size: 3.5em;
+}
+.h2{
+    margin-top: -50px;
+}
+.sobre > div > p{
+    font-family: "Sentinel-Medium";
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+    font-size: 1.2em;
+}
+.sobre > div > button{
+    background-color: white;
+    color: #4298B5;
+    width: 270px;
+    padding: 7px;
+    padding-top: 11px;
+    float: right;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: "bebas-neue-regular";
+}
+/* =============================  responsividade =============================== */
+@media screen and (max-width: 990px){
+    header{
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 160px;
+        padding:10px;
+    }
+    .icone{
+        width: 72%;
+        justify-content: flex-start;
+    }
+    .icone > img {
+        margin-bottom: 0;
+    }
+    nav{
+        width: 75%;
+        flex-grow: 0;
+    }
+    ul{
+        flex-wrap: wrap;
+    }
+    li{
+        flex-grow: 0;
+    }
+    a{
+        width: 150px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 878px){
+    .icone{
+        width: 87%;
+    }
+    nav{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 765px){
+    header{
+        height: 100px;
+        display: block;
+        padding: 0;
+    }
+    .icone{
+        width: 100%;
+        height: 100px;
+        display: block;
+        margin-bottom: 0;
+    }
+    #logo{
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    #menu{
+        display: block;
+        float: right;
+        margin-top: 20px;
+    }
+    nav{
+        background-color: white;
+        display: block;
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: height 1s;
+    }
+    .nav-ver{
+        height: 220px;
+    }
+    .nav-nao-ver{
+        height: 0px;
+    }
+    ul{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    li{
+        margin-bottom: 0;
+        display: flex;
+        padding: 2px;
+    }
+    a{
+        display: block;
+        width: 100%;
+        padding: 5px;
+        padding-top: 10px;
+        padding-left: 35px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 1.5em;
+    }
+    .sobre{
+        height: 110vh;
+    }
+    .sobre > div {
+        width: 95%;
+    }
+    .sobre > div > p{
+        margin-top: -25px;
+        margin-bottom: 20px;
+    }
+}
