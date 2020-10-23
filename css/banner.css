@@ -1,0 +1,33 @@
+.banner-carrossel{
+    background-color: red;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+.banner-carrossel > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#img2{
+    position: absolute;
+}
+h2{
+    position: absolute;
+    color: white;
+    font-family: "bebas-neue-regular";
+    font-weight: lighter;
+
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+.nao-ver{
+    transition: 1s;
+    opacity: 0;
+}
+.ver{
+    transition: 1s;
+    opacity: 1;
+}

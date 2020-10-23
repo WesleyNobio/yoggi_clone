@@ -16,11 +16,12 @@ body{
     padding: 0;
 }
 header{
-    position: fixed;
+    position: fixed !important;
     background: white;
     display: flex;
     width: 100%;
     height: 100px;
+    z-index: 1;
 }
 .icone{
     width: 160px;
