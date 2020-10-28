@@ -1,7 +1,6 @@
 .banner-carrossel{
     background-color: red;
     width: 100%;
-
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -14,7 +13,7 @@
 #img2{
     position: absolute;
 }
-h2{
+.banner-carrossel > h2{
     position: absolute;
     color: white;
     font-family: "bebas-neue-regular";
@@ -30,4 +29,108 @@ h2{
 .ver{
     transition: 1s;
     opacity: 1;
+}
+/* ========================= produtos ========================================= */
+.produtos{
+    padding: 15px;
+    margin-top: 40px;
+}
+.produtos > div > div,h3,h2,p{
+    margin-left: 20px;
+    font-family: "Sentinel-Medium";
+    color: #707372;
+}
+.produtos > div > h2{ 
+    font-size: 3.5em;
+    font-weight: lighter;
+}
+.produtos > div > h3{
+    font-size: 3.5em; 
+    margin-top: -55px;
+    margin-bottom: -20px;
+}
+.produtos > div > p{
+    font-family: "bebas-neue-regular";
+    font-size: 1.5em;
+}
+.sabores{
+    margin-top: 60px;
+}
+.sabores > a {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    padding: 4px;
+    background-size: cover;
+}
+.sabores > a:nth-child(4){
+    margin-right: 0px;
+}
+.img_y1{ background-image: url('../assets/yoggi_top.png');}
+.img_y1:hover{ background-image: url('../assets/yoggi_top_active.png') }
+.img_y2{ background-image: url('../assets/yoggi_top1.png'); }
+.img_y2:hover{ background-image: url('../assets/yoggi_top1_active.png') }
+.img_y3{ background-image: url('../assets/yoggi_top2.png'); }
+.img_y3:hover{ background-image: url('../assets/yoggi_top2_active.png') }
+.img_y4{ background-image: url('../assets/yoggi_top3.png'); }
+.img_y4:hover{ background-image: url('../assets/yoggi_top3_active.png') }
+
+.servece{
+    height: 120px;
+    width: calc(( 150px * 3) + (25px * 2) + (15px));
+    background-image: url(../assets/self-service.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.servece > p {
+    display: none;
+}
+.tutorial{
+    width:  calc(( 150px * 3) + (25px * 2) + (15px));
+    height: 300px;
+    background-image: url(../assets/passoapasso1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 990px){
+    .produtos{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .produtos > div > div,h3,h2,p{
+        margin-left: 0px;
+    }
+    .produtos > div {
+        width: 720px;
+    }
+}
+@media screen and (max-width: 765px){
+    .servece{
+        background-image: none;
+        background-color: rgb(35, 127, 158);
+        height: 45px;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .servece > p{
+        display: block;
+        color: white;
+        font-family: "bebas-neue-regular";
+        font-size: 1.5em;
+        padding-top: 6px;
+    } 
+    .tutorial{
+        width:  calc(( 150px * 3) + (25px * 2) + (15px));
+        height: 1100px;
+        background-image: url(../assets/passoapasso2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }

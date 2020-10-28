@@ -16,8 +16,9 @@ body{
     padding: 0;
 }
 header{
-    position: fixed !important;
+    position: fixed ;
     background: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     width: 100%;
     height: 100px;
@@ -103,6 +104,7 @@ a:hover{
     margin-bottom: 50px;
     padding: 12px;
     font-size: 1.2em;
+    color: white;
 }
 .sobre > div > button{
     background-color: white;
