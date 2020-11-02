@@ -1,0 +1,131 @@
+.onde_tem{
+    background-color: #f1a91e;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.onde_tem > div {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.icone_local{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.icone_local > img{
+    margin-left: 200px;
+}
+.titulo{
+    width: 43%;
+    font-size: 1.5em;
+}
+.titulo > h1{
+    margin-top: -25px;
+    font-size: 2.5em;
+    font-family: "SentinelBold", Courier, Serif;
+    font-weight: lighter;
+    position: relative;
+}
+.titulo > h1 > span{
+    position: absolute;
+    font-family: "Sentinel-Medium";
+    margin-top: 15px;
+}
+.cidades{
+    width: 57%;
+}
+.cidades > p {
+    font-family: "bebas-neue-regular";
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+}
+.endereco_banner{
+    display: flex;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+.e_visivel{
+    max-height: 1000px;
+}
+.local{
+    background-color: rgb(248, 197, 66);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 15px 2px 1px;
+}
+.local > p {
+    color: white;
+}
+.local > p:nth-child(1){
+    font-family: "SentinelBold", Courier, Serif;
+    font-size: 1.06em;
+}
+.local > p:nth-child(2){
+    margin-top: -1px;
+    font-size: 1.2em;
+}
+.local_map{
+    display: flex;
+    width: 50%;
+}
+.local_map > iframe{
+    width: 100%;
+}
+
+@media screen and (max-width: 990px){
+    .onde_tem > div {
+        width: 720px;
+    }
+    .local{
+        padding: 1px 1px 5px 20px;
+    }
+    .icone_local > img{
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 765px){
+    .onde_tem{
+        min-height: 110vh;
+    }
+    .onde_tem > div {
+        width: 95%;
+    }
+    .icone_local{
+        justify-content: flex-end;
+    }
+    .icone_local > img{
+        margin-right: 5px;
+    }
+    .titulo{
+        width: 100%;
+    }
+    .cidades{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .cidades > p {
+        margin-left: 15px;
+    }
+    .endereco_banner{
+        flex-wrap: wrap;
+    }
+    .local{
+        width: 100%;
+    }
+    .local_map{
+        width: 100%;
+    }
+    
+}
