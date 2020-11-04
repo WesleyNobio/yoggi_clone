@@ -7,8 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="css/header_sobre.css">
-    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/produto_banner.css">
     <link rel="stylesheet" href="css/onde_tem.css">
+    <link rel="stylesheet" href="css/fale_com.css">
     <title>yoggi</title>
 </head>
 
@@ -76,7 +77,7 @@
                 <h1> <span>Onde</span> </br> tem Yoggi</h1>
             </div>
             <div class="cidades">
-                <p class="p_c BA" >BAHIA</p>
+                <p class="p_c BA">BAHIA</p>
                 <div class="endereco_banner BA">
                     <div class="local">
                         <p>Yoggi Shopping Barra - Salvador</p>
@@ -93,7 +94,7 @@
                         </iframe>
                     </div>
                 </div>
-                <p class="p_c DF" >DISTRITO FEDERAL</p>
+                <p class="p_c DF">DISTRITO FEDERAL</p>
                 <div class="endereco_banner DF">
                     <div class="local">
                         <p>Yoggi Boulevard Shopping - Df</p>
@@ -105,11 +106,43 @@
                     </div>
                     <div class="local_map">
                         <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA4jIYHIb64Orp6Ba6toHVoXjYF9eMqRMs&q=-22.9099384,-47.0626332"
-                         frameborder="0">
+                            frameborder="0">
                         </iframe>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="fale_com">
+        <div class="form">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome">
+
+                <label for="mail">E-mail:</label>
+                <input type="text" name="mail">
+
+                <label for="assunto">Assunto</label>
+                <select id="assunto">
+                    <option value>Selecione o assunto</option>
+                    <option value="Sugestões">Sugestões</option>
+                    <option value="Franquias">Franquias</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Recursos Humanos">Recursos Humanos</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <div class="fale_titulo">
+            <h1>
+                Fale com </br>
+                <span>a gente</span>
+            </h1>
         </div>
     </div>
 

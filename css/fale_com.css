@@ -1,0 +1,126 @@
+.fale_com{
+    height: 150vh;
+    display: flex;
+}
+.form{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.form > form{
+    width: 90%;
+    margin-right: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.form > form > label,input,select,textarea{
+    width: 100%;
+}
+.form > form > label{
+    height: 40px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.3em;
+    font-family: "Sentinel-Medium";
+    color: #313333;
+}
+.form > form > input{
+    padding: 5px;
+    height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.form > form > select{
+    padding: 5px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    font-family: initial;
+    background-color: white;
+    font-size: 1.1em;
+    color: gray;
+}
+.form > form > input:hover{
+    outline: 0.5px solid black;
+}
+.form > form > textarea{
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.form > form > textarea:hover{
+    outline: 0.5px solid black;
+}
+.form > form > button{
+    margin-top: 20px;
+    width: 90px;
+    height: 50px;
+    font-family: "bebas-neue-regular";
+    font-size: 1.5em;
+    outline: none;
+    border: 0;
+    background-color: #545756;
+    color: white;
+    padding: 5px 1px 1px 1px;
+}
+.fale_titulo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: right;
+}
+.fale_titulo > h1 {
+    margin-top: 100px;
+    font-size: 3.7em;
+    font-family: "Sentinel-Medium";
+    font-weight: lighter;
+    color: #707372;
+}
+.fale_titulo > h1 > span{
+    font-family: "SentinelBold", Courier, Serif;
+    display: flex;
+    font-size: 1.5em;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 990px){
+    
+    .fale_com{
+        height: auto;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .form{
+        width: 720px;
+    }
+    .fale_titulo{
+        width: 720px;    
+        justify-content: flex-end; 
+    }
+    .fale_titulo > h1 {
+        margin-right: 75px;
+    }
+    .form > form{
+        width: 100%;
+        margin-right: 0px;
+    }
+
+}
+@media screen and (max-width: 765px){
+    
+    .fale_com{
+        padding: 10px;
+    }
+    .form{
+        width: 95%;
+    }
+    .fale_titulo{
+        width: 95%;
+        justify-content: flex-start; 
+        text-align: left;
+    }
+}
+
