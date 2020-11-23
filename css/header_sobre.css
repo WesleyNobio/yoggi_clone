@@ -65,18 +65,19 @@ a{
     color: #707372;
     font-family: "bebas-neue-regular";
     font-size: 1.4em;
+    cursor: pointer;
 }
-li:nth-child(1) > a{
-    background-color: #4298B5;
-    color: white;
-}
-a:hover{
+.ativado1{ background-color: #4298B5; color: white;}
+.ativado2{ background-color: rgb(18, 94, 119); color: white;}
+.ativado3{ background-color: #f1a91e; color: white;}
+.ativado4{ background-color: grey; color: white;}
+.ativado:hover{
     color: black;
 }
 /* ==================================== SOBRE =================================== */
 .sobre{
     background: #4298B5;
-    height: 150vh;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
