@@ -24,6 +24,9 @@ header{
     height: 100px;
     z-index: 1;
 }
+.espaco{
+    height: 100px;
+}
 .icone{
     width: 160px;
     display: flex;
@@ -80,7 +83,7 @@ a{
     height: 700px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 .sobre > div{
     width: 48%;
@@ -125,7 +128,7 @@ a{
     header{
         justify-content: center;
         flex-wrap: wrap;
-        height: 160px;
+        height: 140px;
         padding:10px;
     }
     .icone{
@@ -136,6 +139,7 @@ a{
         margin-bottom: 0;
     }
     nav{
+        margin-top: -20px;
         width: 75%;
         flex-grow: 0;
     }
@@ -163,6 +167,9 @@ a{
         height: 100px;
         display: block;
         padding: 0;
+    }
+    nav{
+        margin-top: 0px;
     }
     .icone{
         width: 100%;

@@ -1,2 +1,2 @@
 # yoggi_clone
-clone do site www.yoggi.com.br
+clone da página inicial do site www.yoggi.com.br

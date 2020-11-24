@@ -21,16 +21,16 @@ let falar_com = document.querySelector("#falar_com")
 
 
 function posicao_scroll_ativa() {
-    if (yoggi.offsetTop <= window.scrollY && window.scrollY <= yoggi.offsetTop + 100) {
+    if (yoggi.offsetTop - 95 <= window.scrollY && window.scrollY <= yoggi.offsetTop + 100) {
         add_class(document.querySelectorAll('.nav_a')[0])
     }
-    if (produto.offsetTop - 65 <= window.scrollY && window.scrollY <= produto.offsetTop + 100) {
+    if (produto.offsetTop - 95 <= window.scrollY && window.scrollY <= produto.offsetTop + 100) {
         add_class(document.querySelectorAll('.nav_a')[1])
     }
-    if (onde_tem.offsetTop - 65 <= window.scrollY && window.scrollY <= onde_tem.offsetTop + 100) {
+    if (onde_tem.offsetTop - 95 <= window.scrollY && window.scrollY <= onde_tem.offsetTop + 100) {
         add_class(document.querySelectorAll('.nav_a')[2])
     }
-    if (falar_com.offsetTop - 65 <= window.scrollY && window.scrollY <= falar_com.offsetTop + 700) {
+    if (falar_com.offsetTop - 95 <= window.scrollY && window.scrollY <= falar_com.offsetTop + 700) {
         add_class(document.querySelectorAll('.nav_a')[3])
     }
 }
@@ -62,11 +62,12 @@ link.forEach(a => {
 
         var a = relacionar_class_do_botao_com_div(this.classList[1]);
 
-        var cal = (100 / (window.scrollY)) * (a.offsetTop - 65); // cal para fixa posição do scroll
+        var cal = (100 / (window.scrollY)) * (a.offsetTop - 85); // cal para fixa posição do scroll
 
         if (cal.toFixed() <= 101 && cal.toFixed() >= 99) return;
+        if (a.id == 'yoggi' && cal.toFixed() <= 190 && cal.toFixed() >= 70) return;
 
-        const up_down = (a.offsetTop - 65) > window.scrollY ? 10 : -10; // o sroll deve descer ou subir
+        const up_down = (a.offsetTop - 85) > window.scrollY ? 10 : -10; // o sroll deve descer ou subir
 
         funcao_de_intervalo_para_deslocamento_do_scroll_pelo_click(up_down, a)
     })
@@ -109,15 +110,10 @@ function funcao_de_intervalo_para_deslocamento_do_scroll_pelo_click(up_down, a) 
 
         window.scrollBy(0, up_down)
         if (up_down == -10) { //up
-            if (a.id == 'yoggi') {
-                if ((a.offsetTop + 2) >= window.scrollY) clearInterval(intervalo)
-
-            } else {
-                if ((a.offsetTop - 65) >= window.scrollY) clearInterval(intervalo)
-            }
+            if ((a.offsetTop - 85) >= window.scrollY) clearInterval(intervalo)
         }
         if (up_down == 10) {
-            if ((a.offsetTop - 65) <= window.scrollY) clearInterval(intervalo)
+            if ((a.offsetTop - 95) <= window.scrollY) clearInterval(intervalo)
         }
 
     }
